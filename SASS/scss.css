@@ -1,9 +1,10 @@
-body {
-  border-style: solid;
-  border-width: auto; }
+#bgr {
+  position: absolute; }
 
-.game {
-  background-size: auto;
-  background-repeat: no-repeat; }
+div {
+  margin: auto;
+  border: 1em solid;
+  height: 75vh;
+  width: 75vw; }
 
 /*# sourceMappingURL=scss.css.map */
