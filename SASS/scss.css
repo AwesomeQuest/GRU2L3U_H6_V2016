@@ -1,10 +1,13 @@
 #bgr {
-  position: absolute; }
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0; }
 
-div {
-  margin: auto;
-  border: 1em solid;
-  height: 75vh;
-  width: 75vw; }
+#plr {
+  position: absolute;
+  left: 400px;
+  top: 400px;
+  z-index: 1; }
 
 /*# sourceMappingURL=scss.css.map */

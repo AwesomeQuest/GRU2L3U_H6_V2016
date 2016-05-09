@@ -1,5 +1,16 @@
 
 #bgr{
 	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+}
+#bgr:hover{
+}
 
+#plr{
+	position: absolute;
+	left: 400px;
+	top: 400px;
+	z-index: 1;
 }
