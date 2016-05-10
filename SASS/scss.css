@@ -10,4 +10,13 @@
   top: 400px;
   z-index: 1; }
 
+#npc {
+  position: absolute;
+  left: 450px;
+  top: 300px;
+  z-index: 0.9; }
+
+body {
+  background-color: black; }
+
 /*# sourceMappingURL=scss.css.map */
