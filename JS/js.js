@@ -1,5 +1,7 @@
 var plr=document.getElementById('plr');
 var bgr=document.getElementById('bgr');
+var npc=document.getElementById('npc');
+var intText=document.getElementById('intText')
 
 var plrLeft = 400;
 var plrTop = 400;
@@ -13,6 +15,13 @@ var countMoves = 0;
 var map = 11;
 
 function anim(e){
+
+
+	/*
+	-------------------------------------
+	MOVEMENT
+	-------------------------------------
+	*/
 
 	if (e.keyCode==39) {
 		plrLeft +=5;
@@ -77,9 +86,16 @@ function anim(e){
 
 	}
 
-	
 
+	/*
+	------------------------------------------------
+	INTERACT
+	------------------------------------------------
+	*/
 
+	else if (e.keyCode==13 && map == 11 && plrLeft >= 400 && plrLeft <= 500 && plrTop >= 250 && plrTop <= 350) {
+		
+	}
 
 	/* 
 	------------------------------------------------
@@ -94,6 +110,7 @@ if (map == 11) {
 	if (plrLeft >= 940) {
 
 		bgr.src='C:/Users/torfi/Documents/GitHub/GRU2L3U_H6_V2016/Things/Map/2_1.png';
+		npc.style.display = 'none';
 
 		plrLeft = 0;
 		map = 21;
@@ -101,6 +118,7 @@ if (map == 11) {
 	else if (plrLeft < 0) {
 
 		bgr.src='C:/Users/torfi/Documents/GitHub/GRU2L3U_H6_V2016/Things/Map/0_1.png';
+		npc.style.display = 'none';
 		plrLeft=920;
 		map = 1;
 	}
@@ -116,6 +134,7 @@ if (map == 1) {
 	if (plrLeft >= 940) {
 
 		bgr.src='C:/Users/torfi/Documents/GitHub/GRU2L3U_H6_V2016/Things/Map/1_1.png';
+		npc.style.display = 'inline';
 
 		plrLeft = 0;
 		map = 11;
@@ -136,12 +155,15 @@ if (map == 21) {
 		bgr.style.height= '640px';
 		bgr.style.width= '960px';
 
+		npc.style.display = 'none';
+
 		plrTop = 620;
 		map = 21;
 	}
 	else if (plrTop >= 620) {
 
 		bgr.src='C:/Users/torfi/Documents/GitHub/GRU2L3U_H6_V2016/Things/Map/2_2.png';
+		npc.style.display = 'none';
 		plrTop=0;
 		map = 21;
 	}
