@@ -94,7 +94,7 @@ function anim(e){
 	*/
 
 	else if (e.keyCode==13 && map == 11 && plrLeft >= 400 && plrLeft <= 500 && plrTop >= 250 && plrTop <= 350) {
-		
+		alert('Hello');
 	}
 
 	/* 
